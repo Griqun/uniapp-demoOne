@@ -1,4 +1,7 @@
 {
+	"easycom": {
+			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+		},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path": "pages/find/index",
@@ -19,13 +22,19 @@
 		{
 			"path": "pages/main/index",
 			"style": {
-				"navigationBarTitleText": "视频"
+				"navigationBarTitleText": "我的"
 			}
 		},
 		{
 			"path": "pages/yun/index",
 			"style": {
 				"navigationBarTitleText": "云村"
+			}
+		},
+		{
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": "账号"
 			}
 		}
 		
@@ -67,7 +76,7 @@
 		    "text": "云村"
 		},
 		{
-		    "pagePath": "pages/account/index",
+		    "pagePath": "pages/login/index",
 		    "iconPath": "static/tab/t_5.png",
 		    "selectedIconPath": "static/tab/t_51.png",
 		    "text": "账号"
